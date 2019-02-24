@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 import time
 
-MAX_WAIT = 10 # max time for a test to continue refreshing
+MAX_WAIT = 3 # max time for a test to continue refreshing
 
 class NewVisitorTest(LiveServerTestCase):
 
