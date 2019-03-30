@@ -34,6 +34,7 @@ class NewVisitorTest(FunctionalTest):
         # enters "User peackcok feather to make a fly" (Edith is very methodical)
         inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Use peacock feathers to make a fly')
+        self.browser.implicitly_wait(30)
         inputbox.send_keys(Keys.ENTER)
 
         # The page updates again, and now shows both items on her lists
